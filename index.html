@@ -18,21 +18,26 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="logo">
-        <a href="">&lt;Kym&#47;&gt;</a>
+        <a href="#home">&lt;Kym&#47;&gt;</a>
       </div>
 
       <nav class="navbar">
         <ul class="nav-links">
-          <li><a href="" class="link">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Experience</a></li>
-          <li><a href="">Tech Stack</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#home" class="link active">Home</a></li>
+          <li><a href="#about" class="link">About</a></li>
+          <li><a href="#experience" class="link">Experience</a></li>
+          <li><a href="#tech-stack" class="link">Tech Stack</a></li>
+          <li><a href="#projects" class="link">Projects</a></li>
+          <li><a href="#contact" class="link">Contact</a></li>
         </ul>
       </nav>
 
@@ -40,123 +45,178 @@
         <button class="toggle-dark-mode" id="themeToggle">
           <i class="fa-solid fa-moon"></i>
         </button>
-        <button class="hamburger-icon" id="hamburgerIcon"></button>
+        <button class="hamburger-icon" id="hamburgerIcon">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </header>
 
-    <section class="home" id="home">
-      <div class="container home-container">
-        <span>Hi, I am</span>
-        <h1>Kym Brian Ancheta</h1>
-        <h2>Student / Aspiring Web Developer</h2>
-        <p>
-          Currently a Bachelor of Science in Information Systems college student
-          in Taguig City University. Soon to become a Web Developer.
-        </p>
+    <main class="main">
+      <section class="home" id="home">
+        <div class="container home-container">
+          <span class="greeting">Hi, I am</span>
+          <h1 class="main-title">Kym Brian Ancheta</h1>
+          <h2 class="role">Student / Aspiring Web Developer</h2>
+          <p class="home-parag">
+            Currently a Bachelor of Science in Information Systems college
+            student in Taguig City University. Soon to become a Web Developer.
+          </p>
 
-        <div class="cta-buttons">
-          <button class="cta">View My Projects</button>
-        </div>
-        <div class="social-icons">
-          <a href=""><i class="fa-brands fa-github"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-          <a href=""><i class="fa-solid fa-envelope"></i></a>
-          <a href=""><i class="fa-solid fa-file"></i></a>
-        </div>
-      </div>
-    </section>
-    <section class="section about" id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <img
-          src="../kym-personal-portfolio/assets/images/KymFormalPic2026.jpg"
-          alt="Formal picture of Kym Brian Ancheta p"
-        />
-        <p>
-          I am Kym Brian Ancheta, a college student from Taguig City University
-          in a Bachelor of Science in Information Systems program. I am learning
-          web development and I know the basics of HTML, CSS, and a bit about
-          Javascript. I also know a little about Java.
-        </p>
-
-        <p>
-          Honestly, I want to be a Full-stack Developer someday, i am just
-          familiarizing myself at front-end development then later proceed to
-          backend, databases, devOps, and tools.
-        </p>
-      </div>
-    </section>
-    <section class="section experience" id="experience">
-      <div class="container">
-        <h2>Experience</h2>
-      </div>
-    </section>
-    <section class="section tech-stack" id="tech-stack">
-      <div class="container">
-        <h2>Tech Stack</h2>
-        <div class="tech-container">
-          <div class="tech-item">
-            <h3>Backend</h3>
-            <div class="tech">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
-              />
-              <p class="progress-bar">Progress</p>
-            </div>
+          <div class="cta-button">
+            <button class="cta">View Projects</button>
           </div>
-          <div class="tech-item">
-            <h3>Frontend</h3>
-            <div class="tech">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-              />
-
-              <p class="progress-bar">Progress</p>
-            </div>
-            <div class="tech">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-              />
-
-              <p class="progress-bar">Progress</p>
-            </div>
-          </div>
-          <div class="tech-item">
-            <h3>Database</h3>
-            <div class="tech">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
-              />
-
-              <p class="progress-bar">Progress</p>
-            </div>
-          </div>
-          <div class="tech-item">
-            <h3>DevOps</h3>
-            <div class="tech">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-              />
-
-              <p class="progress-bar">Progress</p>
-            </div>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-solid fa-file"></i></a>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section projects" id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-      </div>
-    </section>
-    <section class="section contact" id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <form>
-          <label for="">Name</label>
-          <input type="text" />
-        </form>
-      </div>
-    </section>
+      </section>
+      <section class="section about" id="about">
+        <div class="container">
+          <h2 class="about-title">About Me</h2>
+          <img
+            class="about-img"
+            src="../kym-personal-portfolio/assets/images/KymFormalPic2026.jpg"
+            alt="Formal picture of Kym Brian Ancheta p"
+          />
+
+          <div class="about-parag-container">
+            <p class="about-parag">
+              I am Kym Brian Ancheta, a college student from Taguig City
+              University in a Bachelor of Science in Information Systems
+              program. I am learning web development and I know the basics of
+              HTML, CSS, and a bit about Javascript. I also know a little about
+              Java.
+            </p>
+
+            <p class="about-parag">
+              Honestly, I want to be a Full-stack Developer someday, i am just
+              familiarizing myself at front-end development then later proceed
+              to backend, databases, devOps, and tools.
+            </p>
+          </div>
+
+          <button class="about-btn">View</button>
+        </div>
+      </section>
+      <section class="section experience" id="experience">
+        <div class="container">
+          <h2>Experience</h2>
+        </div>
+      </section>
+      <section class="section tech-stack" id="tech-stack">
+        <div class="container">
+          <h2>Tech Stack</h2>
+          <div class="tech-container">
+            <div class="tech-item">
+              <h3>Backend</h3>
+              <div class="tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                />
+                <p class="progress-bar">Progress</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <h3>Frontend</h3>
+              <div class="tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                />
+
+                <p class="progress-bar">Progress</p>
+              </div>
+              <div class="tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                />
+
+                <p class="progress-bar">Progress</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <h3>Database</h3>
+              <div class="tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                />
+
+                <p class="progress-bar">Progress</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <h3>DevOps</h3>
+              <div class="tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                />
+
+                <p class="progress-bar">Progress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section projects" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+        </div>
+      </section>
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="contact-us">
+            <form>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                placeholder="e.g., Kym Brian Ancheta"
+                id="name"
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="e.g., email@gmail.com"
+              />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type here..."
+              ></textarea>
+            </form>
+          </div>
+          <div class="contact-us">
+            <address>
+              <p>
+                <span class="contact-us-info">Address</span>: 123 Durian St.
+                North Signal Village, Taguig City, Metro Manila, Philippines
+              </p>
+              <p>
+                <span class="contact-us-info">Phone</span>
+                <a href="tel:+639911252691">+63 991 125 2691</a>
+              </p>
+              <p>
+                <span class="contact-us-info">Email</span>
+                <a href="mailto:anchetabrian23@gmail.com"
+                  >anchetabrian23@gmail.com</a
+                >
+              </p>
+              <p>
+                <span class="contact-us-info">Website</span>
+                <a href="#">Kym Website</a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Kym Brian Ancheta. All rights reserved.</p>
+    </footer>
   </body>
 </html>

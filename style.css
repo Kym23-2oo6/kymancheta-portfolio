@@ -1,0 +1,185 @@
+:root {
+  /*Primary*/
+  --primary: #12b0f9;
+  --primary-hover: #11a7ec;
+  --primary-light: #2eb7f7;
+
+  /*Header*/
+  --header: #e8f3f2;
+
+  /*Accent*/
+  --accent: #00cec0;
+
+  /*Backgrounds*/
+  --bg: #f4fffe;
+  --card: #496b69;
+
+  /*Text*/
+  --text: #0d0e0d;
+  --text-secondary: #131413;
+  --text-muted: #b6cccc;
+
+  /*Status*/
+  --success: #1bce5d;
+  --warning: #f1a015;
+  --danger: #f03d3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.4;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+}
+
+/*Header Section*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--header);
+  padding: 10px 5%;
+}
+
+.logo {
+  padding: 5px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.5em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2em;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links .link {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+
+.nav-links .active {
+  color: var(--primary);
+}
+
+.nav-right button {
+  border: none;
+  cursor: pointer;
+}
+
+.fa-moon,
+.fa-bars {
+  font-size: 1.5em;
+  color: var(--text-secondary);
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+.main {
+  padding: 0 5%;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+/*Home Section*/
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.main-title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.role {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.home-parag {
+  max-width: 450px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.cta-button {
+  margin: 5px 0 25px 0;
+}
+
+.cta {
+  padding: 0.7rem 2rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-right: 0.5em;
+}
+
+/*About Section*/
+.about-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-img {
+  width: 500px;
+  height: auto;
+  float: left;
+  margin-right: 50px;
+}
+
+.about-parag {
+  font-size: 1.2rem;
+}
+
+.about-parag-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 500px;
+  height: 450px;
+}
+
+.about-btn {
+  padding: 16px 24px;
+  font-size: 1rem;
+  margin: 0 auto;
+}
