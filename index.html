@@ -121,6 +121,7 @@
                   class="tech-image"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
                 />
+                <span class="tech-image-title">Java</span>
                 <div class="progress-bar">
                   <div class="progress-percent java"></div>
                 </div>
@@ -133,6 +134,7 @@
                   class="tech-image"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
                 />
+                <span class="tech-image-title">HTML</span>
                 <div class="progress-bar">
                   <div class="progress-percent html"></div>
                 </div>
@@ -142,6 +144,7 @@
                   class="tech-image"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
                 />
+                <span class="tech-image-title">CSS</span>
                 <div class="progress-bar">
                   <div class="progress-percent css"></div>
                 </div>
@@ -154,6 +157,7 @@
                   class="tech-image"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
                 />
+                <span class="tech-image-title">MySQL</span>
                 <div class="progress-bar">
                   <div class="progress-percent mysql"></div>
                 </div>
@@ -166,6 +170,7 @@
                   class="tech-image"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
                 />
+                <span class="tech-image-title">GitHub</span>
                 <div class="progress-bar">
                   <div class="progress-percent github"></div>
                 </div>
@@ -177,54 +182,92 @@
       <section class="section projects" id="projects">
         <div class="container">
           <h2 class="project-title sub-main-title">Projects</h2>
+          <div class="project-container">
+            <div class="project-item">
+              <img
+                class="project-item-img"
+                src="/kym-personal-portfolio/assets/images/1stProjectPersonalPorfolio.png"
+                alt="Hero section of Kym Brian Ancheta Personal Portfolio"
+              />
+              <div class="project-text-content">
+                <span class="project-item-title">Personal Portfolio</span>
+                <p class="project-item-parag">
+                  My personal portfolio made with HTML, CSS, Javascript.
+                </p>
+                <button class="project-item-btn">View Project</button>
+              </div>
+            </div>
+            <div class="project-item mptc">
+              <span class="project-item-title mptc-text"
+                >More projects to come...</span
+              >
+            </div>
+          </div>
         </div>
       </section>
       <section class="section contact" id="contact">
         <div class="container">
           <h2 class="contact-title sub-main-title">Contact</h2>
-          <div class="contact-us">
-            <form>
-              <label for="name">Name</label>
-              <input
-                type="text"
-                placeholder="e.g., Kym Brian Ancheta"
-                id="name"
-              />
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="e.g., email@gmail.com"
-              />
-              <label for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Type here..."
-              ></textarea>
-            </form>
-          </div>
-          <div class="contact-us">
-            <address>
-              <p>
-                <span class="contact-us-info">Address</span>: 123 Durian St.
-                North Signal Village, Taguig City, Metro Manila, Philippines
-              </p>
-              <p>
-                <span class="contact-us-info">Phone</span>
-                <a href="tel:+639911252691">+63 991 125 2691</a>
-              </p>
-              <p>
-                <span class="contact-us-info">Email</span>
-                <a href="mailto:anchetabrian23@gmail.com"
-                  >anchetabrian23@gmail.com</a
-                >
-              </p>
-              <p>
-                <span class="contact-us-info">Website</span>
-                <a href="#">Kym Website</a>
-              </p>
-            </address>
+          <div class="contact-container">
+            <div class="contact-item">
+              <form class="contact-input">
+                <div class="contact-input-item">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    placeholder="e.g., Kym Brian Ancheta"
+                    id="name"
+                  />
+                </div>
+
+                <div class="contact-input-item">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="e.g., email@gmail.com"
+                  />
+                </div>
+
+                <div class="contact-input-item">
+                  <label for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Your Message..."
+                  ></textarea>
+                </div>
+                <button class="contact-input-btn">Send Message</button>
+              </form>
+            </div>
+            <div class="contact-item">
+              <address class="contact-details">
+                <p>
+                  <span class="contact-us-info">Location</span> <br />Taguig
+                  City, Philippines
+                </p>
+                <p>
+                  <span class="contact-us-info">Phone</span><br />
+                  <a href="tel:+639911252691">+63 991 125 2691</a>
+                </p>
+                <p>
+                  <span class="contact-us-info">Email</span><br />
+                  <a href="mailto:anchetabrian23@gmail.com"
+                    >anchetabrian23@gmail.com</a
+                  >
+                </p>
+                <p>
+                  <span class="contact-us-info">Website</span><br />
+                  <a href="#">Kym Website</a>
+                </p>
+                <div class="social-icons">
+                  <a href=""><i class="fa-brands fa-github"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                  <a href=""><i class="fa-solid fa-envelope"></i></a>
+                  <a href=""><i class="fa-solid fa-file"></i></a>
+                </div>
+              </address>
+            </div>
           </div>
         </div>
       </section>

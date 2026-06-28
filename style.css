@@ -1,9 +1,15 @@
 :root {
   /*Primary*/
   --primary: #12b0f9;
-  --primary-hover: #11a7ec;
+  --primary-hover: #0f98d8;
   --primary-light: #2eb7f7;
   --hover-text: #e4f2f8;
+
+  /*Border*/
+  --border: #e7f3f2;
+
+  /*Placeholder Text*/
+  --placeholder: #9ba7a7;
 
   /*Header*/
   --header: #e8f3f2;
@@ -12,8 +18,8 @@
   --accent: #00cec0;
 
   /*Backgrounds*/
-  --bg: #f4fffe;
-  --card: #496b69;
+  --bg: #ecf7f6;
+  --card: #edf7f6;
 
   /*Text*/
   --text: #0d0e0d;
@@ -86,12 +92,14 @@ header {
 .nav-right button {
   border: none;
   cursor: pointer;
+  background: transparent;
 }
 
 .fa-moon,
 .fa-bars {
   font-size: 1.5em;
   color: var(--text-secondary);
+  background: transparent;
   transition: all 0.3s ease;
 }
 
@@ -110,13 +118,14 @@ header {
 
 .container {
   min-height: 100vh;
-  padding: 50px;
+  padding: 50px 50px 50px 0;
 }
 
 .sub-main-title {
   font-size: 2.5em;
   text-align: center;
   margin-bottom: 25px;
+  padding-top: 10px;
 }
 
 /*Home Section*/
@@ -148,6 +157,8 @@ header {
 
 .cta-button {
   margin: 5px 0 25px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
 }
 
 .cta {
@@ -191,6 +202,7 @@ header {
   width: 100%;
   height: 450px;
   object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 /*Right Side */
@@ -210,7 +222,7 @@ header {
 }
 
 .about-btn {
-  padding: 12px 22px;
+  padding: 12px 30px;
   font-weight: bold;
   border-radius: 10px;
   border: none;
@@ -219,42 +231,56 @@ header {
   margin: auto;
   cursor: pointer;
   transition: 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .about-btn:hover {
-  background: var(--hover-text);
+  background: var(--primary-hover);
 }
 
 /*Tech Stack Section*/
 .tech-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 50px;
 }
 
 .tech-item {
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .tech-stack-title {
   font-size: 1.5em;
   font-weight: bold;
+  color: var(--primary);
 }
 
 .tech {
-  padding: 25px;
+  padding: 25px 25px 25px 0;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .tech-image {
   width: 100%;
   height: 100px;
+}
+
+.tech-image-title {
+  color: var(--text);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 .progress-bar {
@@ -299,4 +325,165 @@ header {
   background-color: var(--primary);
   height: 100%;
   border-radius: 50px;
+}
+
+/*Projects Section*/
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project-item {
+  width: 100%;
+  max-width: 500px;
+
+  border: 3px solid var(--card);
+  border-radius: 11px;
+}
+
+.project-item-img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.project-text-content {
+  padding: 15px;
+  width: 100%;
+}
+
+.project-item-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 5px 0;
+}
+
+.project-item-parag {
+  text-align: justify;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.project-item-btn {
+  padding: 5px 10px;
+  margin: 7px auto 0 auto;
+  display: block;
+  background: var(--primary);
+  border-radius: 7px;
+  border: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.project-item-btn:hover {
+  background: var(--primary-hover);
+}
+
+.project-item.mptc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.project-item-title.mptc-text {
+  font-size: 1.5em;
+}
+
+.contact-container {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin: auto;
+}
+
+.contact-item {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contact-item {
+  display: flex;
+}
+
+.contact-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  padding: 15px;
+  background: var(--card);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: none;
+}
+.contact-input-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input-item label {
+  margin-bottom: 8px;
+}
+
+.contact-input-item input {
+  height: 40px;
+  padding-left: 4px;
+  font-size: 1em;
+  width: 100%;
+  border-radius: 5%;
+  margin-left: 6px;
+  border: 1px solid var(--card);
+}
+
+.contact-input-item textarea {
+  height: 150px;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.contact-input-item textarea::placeholder,
+.contact-input-item input::placeholder {
+  color: var(--placeholder);
+  padding-left: 5px;
+}
+
+.contact-input-btn {
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-radius: 7px;
+  background: var(--primary-light);
+  border: none;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.contact-input-btn:hover {
+  background: var(--primary-hover);
+}
+
+.contact-input-item input,
+.contact-input-item textarea,
+.contact-input-btn {
+  border-radius: 7px;
+  border: 1px solid var(--border);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  font-weight: bold;
 }
