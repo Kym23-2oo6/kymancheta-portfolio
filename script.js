@@ -1,5 +1,7 @@
 const html = document.documentElement;
 const toggle = document.querySelector(".fa-moon");
+const hamburgerIcon = document.getElementById("hamburgerIcon");
+const navLinks = document.getElementById("navLinks");
 
 toggle.addEventListener("click", () => {
   const currentTheme = html.getAttribute("data-theme");
@@ -9,4 +11,8 @@ toggle.addEventListener("click", () => {
   } else {
     html.setAttribute("data-theme", "dark");
   }
+});
+
+hamburgerIcon.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
 });

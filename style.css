@@ -109,7 +109,7 @@ header {
 
 .fa-moon,
 .fa-bars {
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: var(--text-secondary);
   transition: all 0.3s ease;
 }
@@ -548,4 +548,40 @@ footer {
   text-align: center;
   padding: 14px 0;
   background: var(--bg-secondary);
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+  }
+
+  .nav-links li {
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  .nav-links.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
 }
