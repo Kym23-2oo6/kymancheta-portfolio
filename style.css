@@ -551,37 +551,141 @@ footer {
 }
 
 @media (max-width: 1024px) {
-}
-@media (max-width: 768px) {
-  .hamburger-icon {
-    display: inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background: var(--bg-primary);
-    color: var(--text-secondary);
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .nav-links li {
+  .home-parag {
+    max-width: 100%;
+  }
+
+  .about-parag {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    background: var(--nav-bg);
     text-align: center;
-    font-size: 1.4em;
   }
 
   .nav-links.active {
     display: flex;
-    align-items: center;
-    justify-content: center;
+  }
+
+  .nav-links li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+
+  .main-title {
+    font-size: 2.2em;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    height: 300px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .stats-item {
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-input {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
+  .main-title {
+    font-size: 1.8em;
+  }
+
+  .sub-main-title {
+    font-size: 1.8em;
+  }
+
+  .home-container {
+    margin-top: -20px;
+  }
+
+  .cta {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-item:last-child {
+    grid-column: span 2;
+  }
+
+  .tech-item {
+    max-width: 100%;
+  }
+
+  .about-img {
+    height: 220px;
+  }
 }
+
 @media (max-width: 320px) {
+  .main-title {
+    font-size: 1.5em;
+  }
+
+  .role {
+    font-size: 0.95em;
+  }
+
+  .social-icons {
+    gap: 0.6rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-item:last-child {
+    grid-column: span 1;
+  }
+
+  .contact-input-item textarea {
+    height: 100px;
+  }
 }
